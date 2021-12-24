@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="h">
       <div className="h-menu">
-        <Link to="/">
+        <Link to="/viraj">
           <FontAwesomeIcon icon={faHome} className="h-icon" />
         </Link>
 
