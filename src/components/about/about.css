@@ -1,0 +1,318 @@
+.a {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.a-right {
+  flex: 1;
+}
+
+.a-card-bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: rgb(37, 37, 37);
+  width: 70%;
+  height: 90vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.a-card {
+  width: 70%;
+  height: 90vh;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.a-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.a-r-title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/*Card Flipping*/
+.a-r-qualification {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+
+.a-r-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.a-r-card:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flip-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flip-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-r-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-topic {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.flip-sub-topic {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.flip-desc {
+  font-size: 10px;
+  font-weight: 600;
+}
+/*Card Flipping*/
+
+/* Begins skill bars */
+.a-r-skills {
+  padding: 5px 10px 5px 10px;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.skills {
+  text-align: right;
+  color: white;
+  border-radius: 25px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.37);
+}
+
+.front {
+  width: 95%;
+  background-color: #940d19;
+  animation: front 3s ease;
+}
+
+@keyframes front {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.back {
+  width: 90%;
+  background-color: #2196f3;
+  animation: back 3s ease;
+}
+
+@keyframes back {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.ps {
+  width: 70%;
+  background-color: #c99914;
+  animation: ps 3s ease;
+}
+
+@keyframes ps {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* End of skill bars css */
+
+@media screen and (max-width: 820px) {
+  .a {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 10px 10px 10px;
+  }
+
+  .a-left {
+    display: none;
+  }
+
+  .a-right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .a-r-qualification {
+    flex-direction: column;
+  }
+
+  .a-r-card {
+    width: 100%;
+    height: 250px;
+  }
+
+  .card-flip {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px 0;
+  }
+
+  .a-r-card:hover .card-flip {
+    transform: none;
+  }
+
+  .flip-front {
+    width: 30%;
+  }
+
+  .flip-back {
+    transform: rotateY(360deg);
+    width: 60%;
+    color: black;
+  }
+
+  .flip-front,
+  .flip-back {
+    position: static;
+    overflow: visible;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    background-color: #d4d4d4;
+  }
+
+  .a-r-skills {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .a {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .a-left {
+    display: none;
+  }
+
+  .a-right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .a-r-qualification {
+    flex-direction: column;
+  }
+
+  .a-r-card {
+    width: 100%;
+    height: 125px;
+  }
+
+  .card-flip {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px 0;
+  }
+
+  .a-r-card:hover .card-flip {
+    transform: none;
+  }
+
+  .flip-front {
+    width: 30%;
+  }
+
+  .flip-back {
+    transform: rotateY(360deg);
+    width: 60%;
+    color: black;
+  }
+
+  .flip-front,
+  .flip-back {
+    position: static;
+    overflow: visible;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    background-color: #d4d4d4;
+  }
+
+  .a-r-skills {
+    margin-top: 10px;
+  }
+}

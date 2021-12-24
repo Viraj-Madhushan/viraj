@@ -6,6 +6,7 @@ import {
   faWrench,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import './header.css';
 
 const Header = () => {
   return (
