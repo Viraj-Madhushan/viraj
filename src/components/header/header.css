@@ -1,0 +1,69 @@
+.h {
+  height: 100vh;
+  width: 30px;
+  color: aliceblue;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-menu {
+  width: 100%;
+  height: 75%;
+  background-color: #00966e;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.h-icon {
+  margin: 5px 0;
+  width: 22px !important;
+  height: 22px;
+}
+
+.h-icon:hover {
+  width: 30px !important;
+  height: 30px;
+}
+
+@media screen and (max-width: 820px) {
+  .h {
+    height: 40px;
+    width: 100%;
+  }
+
+  .h-menu {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    flex-direction: row;
+  }
+
+  .h-icon {
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .h {
+    height: 30px;
+    width: 100%;
+  }
+
+  .h-menu {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    flex-direction: row;
+  }
+
+  .h-icon {
+    margin: 0px 5px;
+  }
+}
