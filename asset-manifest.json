@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/viraj/static/css/main.5effb53a.css",
-    "main.js": "/viraj/static/js/main.357a7c7d.js",
+    "main.js": "/viraj/static/js/main.a5a8afef.js",
+    "static/media/myweb1.png": "/viraj/static/media/myweb1.99f637756541b2f0a777.png",
     "static/media/MyImage1NoBG.png": "/viraj/static/media/MyImage1NoBG.749ce1ac4da067d1b144.png",
     "static/media/about.jpg": "/viraj/static/media/about.9ca46483a964ea04d689.jpg",
     "static/media/Cybersicurity.png": "/viraj/static/media/Cybersicurity.cdda20e56a86875f753c.png",
@@ -9,10 +10,10 @@
     "static/media/Certificate.png": "/viraj/static/media/Certificate.4f1c9865d92226bd5e21.png",
     "index.html": "/viraj/index.html",
     "main.5effb53a.css.map": "/viraj/static/css/main.5effb53a.css.map",
-    "main.357a7c7d.js.map": "/viraj/static/js/main.357a7c7d.js.map"
+    "main.a5a8afef.js.map": "/viraj/static/js/main.a5a8afef.js.map"
   },
   "entrypoints": [
     "static/css/main.5effb53a.css",
-    "static/js/main.357a7c7d.js"
+    "static/js/main.a5a8afef.js"
   ]
 }
